@@ -1,7 +1,12 @@
-const Book = () => {
-    return <article></article>;
+const Book = ({ title, author, image, alt, children }) => {
+    return (
+        <article className="book">
+            <img src={image} alt={alt}></img>
+            <h2>{title}</h2>
+            <h1>by <br/>{author}</h1>
+            {children}
+        </article>
+    );
 };
 
-const Image = () => <h2>Image Place Holder</h2>;
-const Title = () => <h2>Book Title Place Holder</h2>;
-const Author = () => <h2>Author Name Place Holder</h2>;
+export default Book;
