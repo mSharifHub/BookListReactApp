@@ -67,3 +67,20 @@ body {
     font-weight: bold;
     color: white;
 }
+
+.search-container{
+    padding: 1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-container input{
+    text-align: center;
+    border-radius: 20rem;
+    border-width: 0.3px;
+    padding:5px 100px;
+    font-size: x-large;
+    outline: none;
+   
+    
+}
