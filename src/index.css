@@ -50,37 +50,28 @@ body {
 }
 
 
-.book-select-button{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.book-select-button button{
-    margin-top:2rem ;
-    width: 90px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: rgb(145, 145, 145);
-    border: none;
-    font-size: inherit;
-    font-weight: bold;
-    color: white;
-}
-
 .search-container{
+    position: relative;
     padding: 1rem;
     text-align: center;
-    margin-top: 20px;
+    width: fit-content;
+    margin: 20px auto;
 }
 
 .search-container input{
     text-align: center;
-    border-radius: 20rem;
-    border-width: 0.3px;
-    padding:5px 100px;
-    font-size: x-large;
+    border-radius:24px ;
+    border:1px solid #dfe1e5;
+    padding:10px 20px;
+    font-size: 16px;
     outline: none;
-   
-    
+    width: 400px;
+    box-shadow: none;
+    transition: box-shadow 200ms ease;
 }
+
+.search-container input:focus {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+

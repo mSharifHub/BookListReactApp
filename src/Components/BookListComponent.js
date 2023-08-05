@@ -20,7 +20,6 @@ const Books = [
 
 const BookList = () => {
     const [searchTerm, setSearchTerm] = useState("");
-    const [recentSearches,setRecentSearch] = useState([])
 
     const filteredBooks = Books.filter((book) => book.title.toLowerCase().includes(searchTerm.toLowerCase()));
 
@@ -28,31 +27,30 @@ const BookList = () => {
         setSearchTerm(event.target.value);
     };
 
-    const handleSearchSubmit = (event)=>{
-        
-    }
-
     return (
         <>
             <SearchForm searchTerm={searchTerm} handleSearchChange={handleSearchChange} />
 
             <section className="booklist">
-
                 {filteredBooks.map((book, index) => {
                     return <Book {...book} key={index} />;
                 })}
-
             </section>
         </>
     );
 };
 
 const SearchForm = ({ searchTerm, handleSearchChange }) => {
-
     return (
-        <div className="search-container">
-            <input type="text" value={searchTerm} onChange={handleSearchChange} placeholder="Search Books" />
-        </div>
+        <form>
+            <div className="search-container">
+                <input type="text" 
+                       value={searchTerm}
+                       onChange={handleSearchChange}
+                       placeholder="Search Books" 
+                />
+            </div>
+        </form>
     );
 };
 export default BookList;
