@@ -44,11 +44,7 @@ const SearchForm = ({ searchTerm, handleSearchChange }) => {
     return (
         <form>
             <div className="search-container">
-                <input type="text" 
-                       value={searchTerm}
-                       onChange={handleSearchChange}
-                       placeholder="Search Books" 
-                />
+                <input type="text" value={searchTerm} onChange={handleSearchChange} placeholder="Search Books" />
             </div>
         </form>
     );
