@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import Book from "./BookComponent";
 
+const backendUrl = process.env.REACT_APP_BACK_END;
+
 const BookList = () => {
     const [searchTerm, setSearchTerm] = useState("");
     const [books, setBooks] = useState([]);
@@ -14,7 +16,7 @@ const BookList = () => {
 
         if (query) {
             try {
-                const response = await fetch(`http://localhost:3000/book-list?query=${query}&maxResults=40`);
+                const response = await fetch(`${backendUrl}/book-list?query=${query}`);
 
                 if (response.ok) {
                     const fetchedBooks = await response.json();
