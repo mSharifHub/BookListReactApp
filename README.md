@@ -1,6 +1,6 @@
 
 Google List Of BooksGoogle List Of Books
-Aug 2023 - Aug 2023Aug 2023 - Aug 2023
+Aug 2023Aug 2023 - Aug 2023
 I've developed a straightforward full-stack web application that leverages the Google Books API to search for books. The backend is implemented using Node.js, while the frontend is constructed using the React framework. For deployment, the backend is hosted on Render, and the frontend is facilitated through Netlify.
 
 Objective:
